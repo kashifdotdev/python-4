@@ -1,8 +1,12 @@
 def insert_value(arr, index, value):
-    arr.insert(index, value)  # Insert value at the given index
-    return arr  # Return the modified array
+    arr.insert(index, value)
+    return arr
 
-# Example usage:
-array = [1, 2, 3, 4]
-print(insert_value(array, 2, 99))  # Output: [1, 2, 99, 3, 4]
+# Taking input
+array = list(map(int, input("Enter the array elements separated by space: ").split()))
+index = int(input("Enter the index where you want to insert the value: "))
+value = int(input("Enter the value to insert: "))
 
+# Calling the function and displaying the result
+modified_array = insert_value(array, index, value)
+print("Modified Array:", modified_array)

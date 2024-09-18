@@ -1,0 +1,11 @@
+def sum_of_numbers(arr):
+    total = 0
+    i = 0
+    while i < len(arr):
+        total += arr[i]
+        i += 1
+    return total
+
+# Taking input from the user
+array = list(map(int, input("Enter the array elements separated by space: ").split()))
+print(f"The sum of the array elements is: {sum_of_numbers(array)}")

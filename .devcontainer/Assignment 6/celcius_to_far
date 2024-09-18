@@ -1,0 +1,25 @@
+def convert_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def celsius_to_fahrenheit():
+    temps_in_celsius = []
+    temps_in_fahrenheit = []
+
+    # Collecting temperatures in Celsius from the user
+    n = int(input("How many temperatures would you like to convert? "))
+    for i in range(n):
+        celsius = float(input(f"Enter temperature {i + 1} in Celsius: "))
+        temps_in_celsius.append(celsius)
+
+    # Converting temperatures to Fahrenheit
+    i = 0
+    while i < len(temps_in_celsius):
+        fahrenheit = convert_to_fahrenheit(temps_in_celsius[i])
+        temps_in_fahrenheit.append(fahrenheit)
+        i += 1
+
+    # Output the converted temperatures
+    print("Temperatures in Fahrenheit:", temps_in_fahrenheit)
+
+# Running the function
+celsius_to_fahrenheit()

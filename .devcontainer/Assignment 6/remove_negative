@@ -1,0 +1,7 @@
+def remove_negatives(arr):
+    return [num for num in arr if num >= 0]
+
+# Taking input from the user
+array = list(map(int, input("Enter the array elements separated by space: ").split()))
+filtered_array = remove_negatives(array)
+print("Array after removing negatives:", filtered_array)

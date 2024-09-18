@@ -1,0 +1,7 @@
+def remove_odds(arr):
+    return [num for num in arr if num % 2 == 0]
+
+# Taking input from the user
+array = list(map(int, input("Enter the array elements separated by space: ").split()))
+filtered_array = remove_odds(array)
+print("Array after removing odd numbers:", filtered_array)

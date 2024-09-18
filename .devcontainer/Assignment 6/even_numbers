@@ -1,0 +1,10 @@
+def print_first_10_even_numbers():
+    num = 2
+    count = 0
+    while count < 10:
+        print(num, end=' ')
+        num += 2
+        count += 1
+    print()  # For newline
+
+print_first_10_even_numbers()
