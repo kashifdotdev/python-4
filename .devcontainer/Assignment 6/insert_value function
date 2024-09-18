@@ -1,0 +1,8 @@
+def insert_value(arr, index, value):
+    arr.insert(index, value)  # Insert value at the given index
+    return arr  # Return the modified array
+
+# Example usage:
+array = [1, 2, 3, 4]
+print(insert_value(array, 2, 99))  # Output: [1, 2, 99, 3, 4]
+
